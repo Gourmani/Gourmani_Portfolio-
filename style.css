@@ -1,0 +1,265 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'JetBrains Mono', monospace;
+background:#f8fafc;
+color:#0f172a;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#020617;
+padding:14px 0;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand{
+color:#fff;
+font-weight:600;
+font-size:20px;
+}
+
+.nav-link{
+color:#cbd5f5;
+margin-left:25px;
+font-size:14px;
+}
+
+.nav-link:hover{
+color:#fff;
+}
+
+/* HERO */
+
+.hero{
+padding:160px 0 100px;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.typing{
+font-size:24px;
+color:#60a5fa;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:520px;
+color:#cbd5f5;
+}
+
+.hero-links{
+margin-top:25px;
+}
+
+.hero-links .btn{
+margin-right:12px;
+}
+
+.hero-photo{
+width:320px;
+border-radius:50%;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* SECTIONS */
+
+.section{
+padding:90px 0;
+}
+
+.section h2{
+font-size:30px;
+margin-bottom:35px;
+font-weight:600;
+}
+
+.muted{
+background:#f1f5f9;
+}
+
+/* ABOUT CARD */
+
+.card-box{
+background:white;
+border-radius:12px;
+padding:30px;
+box-shadow:0 8px 25px rgba(0,0,0,0.05);
+max-width:850px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.skills-grid span{
+background:#020617;
+color:white;
+padding:8px 14px;
+border-radius:8px;
+font-size:13px;
+transition:0.3s;
+}
+
+.skills-grid span:hover{
+background:#2563eb;
+}
+
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:white;
+padding:28px;
+border-radius:12px;
+border:1px solid #e2e8f0;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 35px rgba(0,0,0,0.08);
+}
+
+.project-card h5{
+font-size:18px;
+margin-bottom:12px;
+}
+
+.project-card p{
+color:#475569;
+font-size:14px;
+}
+
+.project-card .tech{
+margin-top:10px;
+font-size:13px;
+color:#64748b;
+}
+
+.project-card a{
+display:inline-block;
+margin-top:14px;
+font-weight:600;
+color:#2563eb;
+text-decoration:none;
+}
+
+/* CONTACT */
+
+.dark{
+background:#020617;
+color:white;
+}
+
+.contact-links{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-links a{
+color:#cbd5f5;
+text-decoration:none;
+font-size:14px;
+}
+
+.contact-links a:hover{
+color:white;
+}
+
+/* SOCIAL */
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.social-icons img{
+width:45px;
+transition:0.3s;
+}
+
+.social-icons img:hover{
+transform:scale(1.2);
+}
+
+/* FOOTER */
+
+.footer{
+background:#020617;
+color:#94a3b8;
+text-align:center;
+padding:18px;
+font-size:13px;
+}
+
+/* SCROLL BAR */
+
+#progress-bar{
+position:fixed;
+top:0;
+left:0;
+height:3px;
+background:#2563eb;
+width:0%;
+z-index:9999;
+}
+
+/* ANIMATION */
+
+.section{
+opacity:0;
+transform:translateY(30px);
+transition:all .6s ease;
+}
+
+.section.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-photo{
+margin-top:40px;
+width:250px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
