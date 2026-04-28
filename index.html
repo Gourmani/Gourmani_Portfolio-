@@ -3,12 +3,11 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Gourmani | Software Engineer</title>
+<title>Gourmani | Full Stack Engineer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -18,8 +17,7 @@
 <div id="progress-bar"></div>
 
 <!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top premium-nav">
 <div class="container">
 
 <a class="navbar-brand" href="#">Gourmani</a>
@@ -31,11 +29,15 @@
 <div class="collapse navbar-collapse" id="navMenu">
 <ul class="navbar-nav ml-auto">
 
-<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+<li class="nav-item">
+<button id="theme-toggle" class="btn btn-sm btn-outline-light">🌙</button>
+</li>
 
 </ul>
 </div>
@@ -44,230 +46,209 @@
 </nav>
 
 <!-- HERO -->
-
-<section class="hero section">
-
+<section class="hero-premium">
 <div class="container">
 
+<div class="hero-card">
 <div class="row align-items-center">
 
-<div class="col-md-7">
-
-<h1>
-Hi, I'm Gourmani
-</h1>
-
-<h2 class="typing"></h2>
+<div class="col-md-6">
+<h1>Building real-world web products</h1>
 
 <p>
-
-Backend focused Software Engineer with strong
-problem solving fundamentals.
-
-Ex-KPIT Technologies | 1000+ DSA problems solved.
-
+Full Stack Engineer (MERN) with experience at KPIT Technologies.
+I build scalable backend systems and real-world applications.
 </p>
 
+<div class="hero-stats">
+<span>3+ Live Products</span>
+<span>1000+ DSA</span>
+<span>Ex-KPIT</span>
+</div>
+
 <div class="hero-links">
+<a href="#projects" class="btn btn-primary">View Work</a>
+<a href="static/files/Gourmani_Resume.pdf" target="_blank" class="btn btn-outline-dark">Resume</a>
+</div>
+</div>
 
-<a href="#projects" class="btn btn-primary">View Projects</a>
-
-<a href="static/files/Gourmani_Resume.pdf"
-target="_blank"
-class="btn btn-outline-light">Resume</a>
-
-<a href="https://github.com/Gourmani"
-target="_blank"
-class="btn btn-outline-light">GitHub</a>
-
+<div class="col-md-6 text-center">
+<img src="static/images/profile.jpeg" class="hero-img">
 </div>
 
 </div>
-
-<div class="col-md-5 text-center">
-
-<img src="static/images/profile.jpeg"
-class="hero-photo"
-alt="Gourmani">
-
 </div>
 
 </div>
-
-</div>
-
 </section>
 
 <!-- ABOUT -->
-
-<section class="section" id="about">
-
+<section id="about" class="section">
 <div class="container">
-
+<div class="premium-box">
 <h2>About Me</h2>
 
-<div class="card-box">
-
 <p>
+Full Stack Engineer with strong backend focus and experience building scalable systems.
 
-I am a Software Engineer with strong foundations in
-Data Structures, Algorithms and Backend Development.
-
-I completed my B.E in Electronics and Communication
-Engineering from Siddaganga Institute of Technology.
-
-Previously worked at KPIT Technologies where I gained
-experience in automotive software development,
-version control workflows and production coding standards.
-
-Currently seeking backend or software engineering roles
-where I can contribute to scalable systems.
-
+Worked at KPIT Technologies and APSIS Solution. Strong in DSA (1000+ problems) and real-world MERN development.
 </p>
 
 </div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="premium-box">
+
+<h4>KPIT Technologies</h4>
+<span>Associate Software Engineer | 2024 – 2025</span>
+<ul>
+<li>Worked on MATLAB-based automotive simulation modules.</li>
+<li>Improved system performance and optimized logic.</li>
+<li>Collaborated in Agile development.</li>
+</ul>
+
+<hr>
+
+<h4>APSIS Solution</h4>
+<span>Software Intern | 2022</span>
+<ul>
+<li>Developed smart home automation system.</li>
+<li>Implemented microcontroller-based control logic.</li>
+<li>Worked with real-time device communication.</li>
+</ul>
 
 </div>
 
+</div>
 </section>
 
 <!-- SKILLS -->
-
-<section class="section muted" id="skills">
-
+<section id="skills" class="section muted">
 <div class="container">
 
-<h2>Technical Skills</h2>
+<h2 class="section-title">Technical Skills</h2>
 
 <div class="skills-grid">
-
-<span>Python</span>
-<span>Java</span>
-<span>C</span>
-<span>C++</span>
-<span>JavaScript</span>
-<span>SQL</span>
+<span>React</span>
 <span>Node.js</span>
 <span>Express</span>
 <span>MongoDB</span>
 <span>MySQL</span>
 <span>REST APIs</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>Java</span>
+<span>DSA</span>
 <span>Git</span>
 <span>Postman</span>
-
 </div>
 
 </div>
+</section>
 
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+<div class="container">
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="skills-grid">
+<span>1000+ DSA Problems</span>
+<span>Top 10 Hackathon</span>
+<span>2nd Place Technisium</span>
+<span>CCNA Certified</span>
+</div>
+
+</div>
 </section>
 
 <!-- PROJECTS -->
-
-<section class="section" id="projects">
-
+<section id="projects" class="section">
 <div class="container">
 
-<h2>Projects</h2>
+<h2 class="section-title">Featured Work</h2>
+
+<div class="project-grid">
+
+<div class="project-card premium">
+<h5>HomelyMeals</h5>
+<p>MERN food ordering platform with subscription & payments.</p>
+<div class="tech">MERN · Razorpay · JWT</div>
+<a href="https://homely-meals-2-0.vercel.app/" target="_blank">Live</a>
+</div>
+
+<div class="project-card premium">
+<h5>HomeBuddy</h5>
+<p>Marketplace platform for home services.</p>
+<div class="tech">MERN</div>
+<a href="https://home-buddy-gules.vercel.app/" target="_blank">Live</a>
+</div>
+
+<div class="project-card premium">
+<h5>JobVista</h5>
+<p>NLP job analytics dashboard.</p>
+<div class="tech">Python · NLP</div>
+<a href="https://jobvista-india.streamlit.app/" target="_blank">Live</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- OTHER PROJECTS -->
+<section id="other-projects" class="section muted">
+<div class="container">
+
+<h2 class="section-title">Other Projects</h2>
 
 <div class="project-grid">
 
 <div class="project-card">
-
-<h5>Badri Farm — MERN Application</h5>
-
-<p>
-
-Full stack dairy ordering platform built using MERN stack.
-Includes authentication, cart system and order APIs.
-
-</p>
-
-<div class="tech">
-MongoDB · Express · React · Node
-</div>
-
-<a href="https://github.com/Gourmani"
-target="_blank">GitHub</a>
-
+<h5>Gesture Music Player</h5>
+<p>Arduino-based gesture-controlled system.</p>
 </div>
 
 <div class="project-card">
-
-<h5>Homely Meals — Food Ordering</h5>
-
-<p>
-
-Responsive homemade food ordering platform with
-menu browsing and clean UI.
-
-</p>
-
-<div class="tech">
-HTML · CSS · JavaScript
+<h5>Image Data Security</h5>
+<p>Deep learning image verification system.</p>
 </div>
 
-<a href="https://github.com/Gourmani/Homely-Meals"
-target="_blank">GitHub</a>
-
+<div class="project-card">
+<h5>Train Ticket Manager</h5>
+<p>SQL-based reservation system.</p>
 </div>
 
 </div>
 
 </div>
-
 </section>
 
 <!-- CONTACT -->
-
-<section class="section dark" id="contact">
-
+<section id="contact" class="section contact-premium">
 <div class="container text-center">
 
-<h2>Get in Touch</h2>
-
-<p>
-
-Open to backend developer and software engineering
-opportunities.
-
-</p>
+<h2>Let’s Work Together</h2>
+<p>Open to Full Stack / Backend roles</p>
 
 <div class="contact-links">
-
-<a href="mailto:gourmanivats01@gmail.com">
-📧 gourmanivats01@gmail.com
-</a>
-
-<a href="https://wa.me/916204078481" target="_blank">
-💬 WhatsApp
-</a>
-
-</div>
-
-<div class="social-icons">
-
-<a href="https://github.com/Gourmani" target="_blank">
-<img src="static/icons/git.png">
-</a>
-
-<a href="https://www.linkedin.com/in/gourmani-chaudhary-b88b00193/" target="_blank">
-<img src="static/icons/linked.png">
-</a>
-
-<a href="https://www.geeksforgeeks.org/user/gocode23/" target="_blank">
-<img src="static/icons/gfg.png">
-</a>
-
+<a href="mailto:gourmanivats01@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/gourmani-chaudhary-b88b00193/" target="_blank">LinkedIn</a>
+<a href="https://github.com/Gourmani" target="_blank">GitHub</a>
 </div>
 
 </div>
-
 </section>
 
 <footer class="footer">
-
-© 2026 Gourmani 
-
+© 2026 Gourmani
 </footer>
 
 <script src="main.js"></script>
